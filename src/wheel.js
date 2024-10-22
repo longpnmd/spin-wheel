@@ -206,16 +206,16 @@ export class Wheel {
 
       item.path = path;
     }
-
-    this.drawItemBackgrounds(ctx, angles);
-    this.drawItemImages(ctx, angles);
-    this.drawItemLines(ctx, angles);
-    this.drawItemLabels(ctx, angles);
     this.drawBorder(ctx);
     this.drawImage(ctx, this._image, false);
     this.drawImage(ctx, this._overlayImage, true);
     this.drawDebugPointerLine(ctx);
+    this.drawItemBackgrounds(ctx, angles);
+    this.drawItemImages(ctx, angles);
+    this.drawItemLines(ctx, angles);
+    this.drawItemLabels(ctx, angles);
     //this.drawDebugDragPoints(ctx);
+    
 
     this._isInitialising = false;
 
