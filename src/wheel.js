@@ -215,7 +215,7 @@ export class Wheel {
     this.drawItemLines(ctx, angles);
     this.drawItemLabels(ctx, angles);
     //this.drawDebugDragPoints(ctx);
-    
+
 
     this._isInitialising = false;
 
